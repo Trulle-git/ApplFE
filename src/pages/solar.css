@@ -1,0 +1,22 @@
+.solarWrapper{
+    width: 70vw;
+    margin-left: 15vw;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.solarWrapper h2{
+    margin-bottom: 10%;
+    text-align: center;
+    
+}
+.solarListing{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 5%;
+}

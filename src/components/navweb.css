@@ -1,0 +1,70 @@
+.navContainer{
+    width: 100vw;
+    height: 4rem;
+    background-color:var(--navGray);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    background-color: var(--white);
+    z-index: 10;
+}
+.navLogo{
+    height: 70%;
+    margin-left: 10%;
+}
+.navLogo img{
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.navElements{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 5%;
+    width: 35%;
+
+    gap: 12%;
+}
+.navElements a{
+    text-decoration: none;
+    font-family: var(--fontP1);
+    font-size: var(--sizeP1);
+    font-weight: var(--weightP1);
+    color: var(--black);
+    white-space: nowrap;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-bar{
+    content:'';
+    display: inline-block;
+    width: 10px;
+    background-color: var(--orange);
+    height: 25px;
+    margin-right: 2px;
+    transition: 2s ease;
+}
+.navCall{
+    margin-right: 10%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navCall img{
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.navFixed{
+    background-color: var(--white);
+    z-index: 2;
+}

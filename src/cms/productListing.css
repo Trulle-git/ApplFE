@@ -1,0 +1,58 @@
+.listingWrapper{
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 8rem;
+}
+.listContainer{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.listContainer table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.listContainer table tr{
+    width: 100%;
+}
+.listContainer table tr th{
+    padding: .25rem .5rem;
+    text-align: left;
+    background-color: var(--orange);
+    color: var(--white);
+    border-right: 3px solid var(--white);
+    border-radius: 5px;
+}
+.listContainer table tr td{
+    padding: .25rem .5rem;
+    text-align: left;
+    border-bottom: 1px solid var(--black);
+}
+.listBNT{
+    text-align: left;
+    cursor: pointer;
+}
+.listBNT div{
+    width: 90%;
+    padding: .25rem .5rem;
+    background-color: var(--orange);
+    border-radius: 5px;
+}
+.listBNT div a{
+    text-decoration: none;
+    color: var(--white);
+}
+.CMSnavBTN{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}

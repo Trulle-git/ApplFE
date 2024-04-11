@@ -1,0 +1,161 @@
+.aboutBanner{
+    width: 100vw;
+    height: 350px;
+    margin-top: 4rem;
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.aboutBannerTxt{
+    width: 20%;
+}
+.aboutBannerTxt h1{
+    width: 100%;
+    font-family: var(--fontH5);
+    font-size: var(--sizeH5);
+    font-weight: var(--weightH5);
+    color: var(--white);
+}
+.aboutBannerTxt h1 span{
+    color: var(--orange);
+}
+.aboutImage{
+    width: 35%;
+}
+.aboutImage img{
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.aboutWrapper{
+    width: 65vw;
+    margin-left: 17.5vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.aboutWrapper h1{
+    font-family: var(--fontH2);
+    font-size: var(--sizeH2);
+    font-weight: var(--weightH2);
+    margin-bottom: 3%;
+}
+.aboutWrapper p{
+    font-family: var(--fontP1);
+    font-size: var(--sizeP1);
+    font-weight: var(--weightP1);
+    margin-bottom: 5%;
+}
+.abtTech{
+    width: 20%;
+    margin: 5% auto; 
+}
+.abtTech img{
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.subAbout{
+    padding-left: 5%;
+    margin-bottom: 3%;
+}
+.subAbout h2{
+    font-family: var(--fontH2);
+    font-size: var(--sizeH2);
+    font-weight: var(--weightH2);
+    margin-bottom: 1%;
+}
+.subAbout p{
+    font-family: var(--fontP1);
+    font-size: var(--sizeP1);
+    font-weight: var(--weightP1);
+    margin-bottom: 2%;
+}
+.aboutValue{
+    width: 70%;
+    margin: 2% auto;
+    margin-bottom: 5%;
+}
+.aboutValue img{
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.aboutClients{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5%;
+    margin-bottom: 5%;
+}
+.clients{
+    height: 65px;
+    margin-bottom: 5%;
+}
+.clients img{
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+/* ================================ Mobile ============================ */
+@media screen and (max-width:768px) {
+    .aboutBanner{
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        padding: 10rem 0rem 5rem 0rem;
+        flex-direction: column-reverse;
+    }
+    .aboutBannerTxt{
+        width: 100%;
+        padding: 0rem 2rem;
+    }
+    .aboutImage{
+        width: 100%;
+        margin-bottom: 5rem;
+        transform: rotate(90deg);
+    }
+    .aboutWrapper{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 2rem;
+    }
+    .aboutWrapper h1{
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+    .aboutWrapper p{
+        padding: 0 .5rem;
+        text-align: justify;
+    }
+    .subAbout{
+        padding-left: .5rem;
+    }
+    .subAbout p{
+        padding: 0rem 1rem;
+        margin-bottom: 1rem;
+    }
+    .subAbout h2{
+        margin-bottom: 1rem;
+    }
+    .aboutValue{
+        width: 100%;
+    }
+    .aboutClients{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .aboutClients .clients{
+        width: 40%;
+        height: auto;
+    }
+    .aboutClients .clients img{
+        height: auto;
+        width: 100%;
+    }
+}

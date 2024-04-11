@@ -1,0 +1,246 @@
+.productsWrapper{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.productBanner{
+    width: 100%;
+}
+.productBanner img{
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.productList{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3%;
+    transition: all .2s ease;
+}
+.productFilterContainer{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    
+    background-color: var(--lightGray);
+    padding: 5% 2%;
+    border-radius: 10px;
+}
+.filterFieldContainer{
+    width: 100%;
+    margin-bottom: 5%;
+}
+.filterField{
+    width: 100%;
+    margin-bottom: 5%;
+}
+.filterField h2{
+    font-family: var(--fontH2);
+    font-size: var(--sizeH2);
+    font-weight: var(--weightH2);
+    margin-bottom: 5%;
+}
+.inputField{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5%;
+}
+.inputField select{
+    width: 100%;
+    height: 2rem;
+    /* padding: 3px 15px 3px 15px; */
+    padding: 3px 15px 3px 15px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+.checkInput{
+    padding: 3px 15px 3px 15px;
+    justify-content: space-between;
+}
+
+.productFilterContainer{
+    
+}
+
+
+.productListContainer{
+    width: 60%;
+    /* background-color: var(--lightGray); */
+    padding: 1% .5%;
+}
+.products{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3%;
+    margin-top: 5%;
+    /* padding: 2% 0%; */
+    flex-wrap: wrap;
+}
+.cardContainer{
+    width: 250px;
+    height: 310px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    /* background-color: var(--lightGray); */
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 5%;
+
+    /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.imageContainer{
+    width: 100%;
+    height: 60%;
+    margin-bottom: 2%;
+    /* overflow: hidden; */
+}
+.imageContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.description{
+    width: 100%;
+    margin-bottom: 2%;
+    padding: 0 5%;
+}
+.description h1{
+    font-family: var(--fontP4);
+    font-size: var(--sizeP4);
+    font-weight: var(--weightP4);
+}
+.description h2{
+    font-family: var(--fontP2);
+    font-size: var(--sizeP2);
+    font-weight: var(--weightP2);
+    color: var(--darkGray);
+}
+.knowBtn{
+    width: 100%;
+    padding: 0 5%;
+    margin-top: 2%;
+    cursor: pointer;
+}
+.knowBtn button{
+    width: 100%;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: var(--orange);
+    outline: none;
+    border: none;
+    color: var(--white);
+    font-family: var(--fontBtn);
+    font-size: var(--sizeBtn);
+    font-weight: var(--weightBtn);
+    cursor: pointer;
+}
+.knowBtn button a{
+    text-decoration: none;
+    color: var(--white);
+}
+.selectFilter{
+    display: none;
+    width: 90%;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.hideFiltermenu{
+    display: none;
+}
+.filterMenuBack{
+    display: none;
+}
+.filterSubmit{
+    position: absolute;
+    width: 100%;
+    padding: 0rem 1rem;
+    margin-top: 1rem;
+    left: 0;
+    bottom: 50px;
+    margin-left: 0;
+}
+.filterSubmit button{
+    width: 100%;
+    padding: .5rem;
+    border-radius: 5px;
+    background-color: var(--orange);
+    outline: none;
+    border: none;
+    color: var(--white);
+    font-family: var(--fontBtn);
+    font-size: var(--sizeBtn);
+    font-weight: var(--weightBtn);
+    cursor: pointer;
+}
+.hideBtn{
+    display: none;
+}
+/* ============================== Mobile ====================== */
+@media screen and (max-width:768px) {
+    .productBanner{
+        display: none;
+    }
+    .productList{
+        margin-top: 5rem;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+    }
+    .productFilterContainer{
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 0;
+        margin-left: 0%;
+        height: calc(100% - 70px);
+        transition: all .2s ease-in;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .productListContainer{
+        width: 90%;
+    }
+    .filterMenuBack{
+        display: block;
+        margin-bottom: 1rem;
+        padding-left: .7rem;
+        padding-top: .15rem;
+    }
+    .hideFilter{
+        visibility: hidden;
+    }
+    .showFiltermenu{
+        display: flex;
+        opacity: 1;
+    }
+    .filterEffect{
+        visibility: visible;
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    .inputField{
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+    }
+    .filterFieldContainer{
+        width: 80%;
+        margin-left: 1rem;
+    }
+}

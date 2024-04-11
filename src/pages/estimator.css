@@ -1,0 +1,385 @@
+.estimatorWrapper{
+    width: 70dvw;
+    margin-left: 15dvw;
+    margin-top:  300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.estimatorContainer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 5%;
+}
+.estimator{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.stripText{
+    width: 100dvw;
+    height: 2.1rem;
+    background-color: var(--orange);
+    position: relative;
+    margin-left: -15vw;
+}
+.stripText h1{
+    position: absolute;
+    top: 0;
+    left: 15vw;
+    font-size: 2rem;
+    background-color: var(--white);
+    padding: 0 1rem;
+}
+.formcontainer{
+    background-color: var(--lightGray);
+    width: 100%;
+    margin-top: 5%;
+    border-radius: 25px;
+}
+.formcontainer form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 5%;
+}
+.formRow{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 0%;
+    width: 100%;
+}
+.est-input-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-right: 2%;
+    width: 30%;
+}
+.est-input-container input,.est-input-container select{
+    width: 100%;
+    height: 2rem;
+    margin-bottom: .5rem;
+    padding: 2% 0% 1% 5%;
+    font-family: var(--fontP3);
+    font-size: var(--sizeP3);
+    font-weight: var(--weightP3);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+} 
+.est-input-container label{
+    padding: .5% 0% .5% 5%;
+    font-family: var(--fontP2);
+    font-size: var(--sizeP2);
+    font-weight: var(--weightP2);
+}
+.est-sumbit{
+    width: 50%;
+}
+.est-sumbit input{
+    background-color: var(--orange);
+    color: var(--white);
+    font-family: var(--fontBtn);
+    font-size: var(--sizeBtn);
+    font-weight: var(--weightBtn);   
+}
+.est-image-container{
+    /* z-index: 1; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* ===================================================== */
+.showFlex{
+    display: flex;
+}
+.hide{
+    display: none;
+}
+.whatToShowEstimated{
+    width: 100%;
+}
+.estimated{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.saving-details{
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.estiHeader{
+    width: 100%;
+    margin-bottom: 10%;
+}
+.estiHeader h1{
+    font-family: var(--fontH1);
+    font-size: var(--sizeH1);
+    font-weight: var(--weightH1);
+}
+.estiHeader p{
+    font-family: var(--fontP1);
+    font-size: var(--sizeP1);
+    font-weight: var(--weightP3);
+    padding-left: 2%;
+    color: var(--darkGray);
+}
+.piggyContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 10%;
+}
+.piggy{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.piggyImage{
+    width: 100%;
+    margin-bottom: 5%;
+}
+.piggyImage img{
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.piggy h2{
+    font-family: var(--fontH2);
+    font-size: var(--sizeH2);
+    font-weight: var(--weightH2);
+}
+.piggy p{
+    font-family: var(--fontH3);
+    font-size: var(--sizeH3);
+    font-weight: var(--weightH3);
+}
+.estSpecifications{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.estSpecifications h2{
+    font-family: var(--fontH2);
+    font-size: var(--sizeH2);
+    font-weight: var(--weightH2);
+    margin-bottom: 5%;
+}
+.estSpecifications p{
+    font-family: var(--fontP1);
+    font-size: var(--sizeP1);
+    font-weight: var(--weightP1);
+    margin-bottom: 5%;
+    padding-left: 5%;
+}
+.saving-money{
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.est-price{
+    width: 100%;
+    padding-bottom: 5%;
+    border-bottom: .2rem solid var(--orange);
+    margin-bottom: 5%;
+}
+.est-price h1{
+    font-family: var(--fontH1);
+    font-size: var(--sizeH1);
+    font-weight: var(--weightH1)
+}
+.est-price p{
+    font-family: var(--fontP2);
+    font-size: var(--sizeP2);
+    font-weight: var(--weightP2);
+    color:var(--darkGray)
+}
+.estiTerms{
+    font-family: var(--fontP2);
+    font-size: var(--sizeP2);
+    font-weight: var(--weightP2);
+    color:var(--darkGray);
+    margin-bottom: 15%;
+}
+.estiTalkBtn{
+    width: 100%;
+}
+.estiTalkBtn button{
+    width: 100%;
+    background-color: var(--orange);
+    color: var(--white);
+    font-family: var(--fontBtn);
+    font-size: var(--sizeBtn);
+    font-weight: var(--weightBtn);
+    border: 1px solid var(--orange);
+    padding: 2%;
+    border-radius: 5px;
+}
+.estPOP{
+    margin-left: -15vw;
+}
+.estTAlk{
+    margin-left: auto;
+    margin-right: auto;
+}
+.fillForm{
+    width: 100%;
+    height: 20rem;
+    text-align: center;
+    position: relative;
+    border: 2px solid var(--orange);
+}
+.fillForm h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: var(--fontLand2);
+    font-size: var(--sizeH1);
+}
+/* ======================================================================= */
+.estloadingContainer{
+    width: 100vw;
+    height: 100vh;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.estloadingBG{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+    position: absolute;
+    z-index: 5;
+}
+.estloading{
+    width: 5rem;
+    height: 5rem;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 6;
+    /* -webkit-animation: rotate 4s linear infinite; */
+}
+.estloading img{
+    width: 80%;
+    object-fit: contain;
+    object-position: center;
+    animation: rotate 4s linear infinite;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* ============================= Mobile ============================= */
+@media screen and (max-width:768px){
+    .estimatorWrapper{
+        margin-top: 100px;
+        width: 90dvw;
+        margin-left: 5dvw;
+    }
+    .estimatorContainer{
+        position: static;
+        flex-direction: column-reverse;
+    }
+    .est-image-container{
+        position: static;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 2rem;
+    }
+    .est-image-container img{
+        width: 90%;
+    }
+    .stripText{
+        height: 1rem; 
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        margin-left: -10%;
+    }
+    .stripText h1{
+        width: 99%;
+        top: -3rem;
+        left: 10px;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+    .stripText h1 .span2{
+        width: 7rem;
+        background-color: var(--white);
+        padding: 0px 5px;
+    }
+    .stripText h1 .span1{
+        padding: 0px 5px;
+    }
+    .estimator{
+        width: 100%;
+    }
+    .formcontainer{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .formRow{
+        flex-direction: column;
+    }
+    .est-input-container{
+        width: 100%;
+        padding: .5rem 1rem;
+    }
+    .estimated{
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    .saving-details{
+        width: 100%;
+    }
+    .saving-money{
+        width: 100%;
+    }
+    .estPOP{
+        padding-left: 10vw;
+    }
+    .estTAlk .formContainer{
+        width: 90%;
+    }
+    .estTAlk .talkImage-container{
+        width: 100%;
+    }
+}

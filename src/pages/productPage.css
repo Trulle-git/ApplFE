@@ -1,0 +1,62 @@
+.packageImageContainerMob{
+    display: none;
+}
+.selectFilterIndPage{
+    display: none;
+}
+@media screen and (max-width:768px) {
+    .packageImageContainer{
+        display: none;    
+    }
+    .packageWrapper{
+        width: 90%;
+        margin-left: 5%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+    }
+    .packageDescContainer{
+        padding: .5rem;
+        width: 100%;
+    }
+    .packagerow1{
+        flex-direction: column;
+    }
+    .packageMain1{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .packageMain1 h1{
+        margin-bottom: 0;
+    }
+    .packageImageContainerMob{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .packageMainImage{
+        width: 75%;
+    }
+    .packageImages{
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        width: 15%;
+    }
+    .packageImage{
+        width: 100%;
+    }
+    .packageBtn{
+        margin-top: 2rem;
+    }
+    .selectFilterIndPage{
+        display: flex;
+        width: 100%;
+    }
+    .packageWrapper2{
+        width: 90%;
+        margin-left: 5%;
+    }
+}

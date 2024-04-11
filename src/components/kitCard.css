@@ -1,0 +1,72 @@
+.kitCardContainer{
+    width: 320px;
+    height: 420px;
+    border-radius: 20px;
+    background-color: var(--lightGray);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    /* margin-right: 30px; */
+    margin-bottom: 80px;
+}
+.kitCardImage{
+    width: 100%;
+    height: 55%;
+    border-radius: 20px;
+}
+.kitCardImage img{
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 20px;
+}
+.kitCardContent{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1% 8%;
+    margin-bottom: 5%;
+}
+.kitCardContent h2{
+    font-family: var(--fontH2);
+    font-size: var(--sizeH2);
+    font-weight: var(--weightH2);
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.kitCardContent p{
+    font-family: var(--fontP2);
+    font-size: var(--sizeP2);
+    font-weight: var(--weightP2);
+}
+.kitDesp{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.kitCardBtnContainer{
+    padding: 0 8%;
+    height: 2.5rem;
+    width: 100%;
+}
+.kitCardBtnContainer button{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--orange);
+    border: none;
+    outline: none;
+    font-family: var(--fontBtn);
+    font-size: var(--sizeBtn);
+    font-weight: var(--weightBtn);
+    color: var(--white);
+    cursor: pointer;
+}
+.kitCardBtnContainer button a{
+    text-decoration: none;
+    color: var(--white);
+}

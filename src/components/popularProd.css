@@ -1,0 +1,57 @@
+.pop-slider-container{
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+.pop-slider-container::-webkit-scrollbar {
+    display: none;
+  }
+.pop-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: nowrap;
+    /* padding-left:500px; */
+    padding-left:25vw;
+    padding-right:0vw;
+}
+.livePad{
+    padding:10px 0px 10px 500px;
+}
+/* ================================Mobile====================== */
+@media screen and (max-width:768px) {
+    .pop-slider{
+        padding-right:25vw;
+    }
+    .livePad{
+        padding:10px 0 10px 0vw;
+    }
+}
+/* ====================================card=================== */
+.pop-card-container{
+    width: 250px;
+}
+.pop-card-container a{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    text-decoration: none;
+    color: var(--black);
+}
+.pop-image{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+.pop-image img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}

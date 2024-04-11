@@ -1,0 +1,153 @@
+.storyPageWrapper{
+    width: 70vw;
+    margin-left: 15vw;
+    margin-top: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.storyPageTitle{
+    width: 100%;
+    margin-bottom: 5%;
+}
+.storyPageTitle h1{
+    font-family: var(--fontH1);
+    font-size: var(--sizeH1);
+    font-weight: var(--weightH1);
+}
+.storyPageTitle p{
+    font-family: var(--fontP1);
+    font-size: var(--sizeP1);
+    font-weight: var(--weightP1);
+}
+.storyPageContainer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10%;
+    margin-bottom: 15%;
+}
+.storyImageContainer{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.storyMainImage{
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+.storyMainImage img{
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.storyImages{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.storyImage{
+    width: 20%;
+    aspect-ratio: 1/1;
+    filter: grayscale(100%) blur(1px);
+}
+.storyImage img{
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.selectedImage{
+    filter: none;
+}
+.storyPageDescription{
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.storyPageDescription h2{
+    font-family: var(--fontH2);
+    font-size: var(--sizeH2);
+    font-weight: var(--weightH2);
+    margin-bottom: 5%;
+}
+.storyHighContainer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 5%;
+    gap: 15%;
+}
+.storyHigh{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+.storyHigh p{
+    font-family: var(--fontP1);
+    font-size: var(--sizeP1);
+    font-weight: var(--weightP1);
+    color: var(--darkGray);
+}
+.storyHigh h3{
+    font-family: var(--fontH2);
+    font-size: var(--sizeH2);
+    font-weight: var(--weightH2);
+    color: var(--darkGray);
+}
+.storyPageDescription p{
+    font-family: var(--fontP1);
+    font-size: var(--sizeP1);
+    font-weight: var(--weightP1);
+    color: var(--darkGray);
+}
+
+/* ================================== Mobile =============================== */
+@media screen and (max-width:768px) {
+    .storyPageWrapper{
+        margin-top: 80px;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .storyPageContainer{
+        flex-direction: column;
+    }
+    .storyImageContainer{
+        width: 100%;
+    }
+    .storyPageDescription{
+        width: 100%;
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+    .storyPageDescription p{
+        text-align: justify;
+    }
+    .storyImageContainer{
+        position: relative;
+    }
+    .storyMainImage{
+        width: 80%;
+    }
+    .storyImages{
+        position: absolute;
+        width: 15%;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+    }
+    .storyImage{
+        width: 100%;
+    }
+}
