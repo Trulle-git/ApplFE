@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
 import './productListing.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import axios from 'axios'
 
 export default function ProductListing(){
+    const history = useNavigate()
     const [products, setProducts]=useState([])
 
     useEffect(()=>{
@@ -10,7 +12,29 @@ export default function ProductListing(){
         .then(res=>res.json())
         .then(data=>setProducts(data.rows))
     },[])
+
+    const [loadingest, setLoadingest] = useState(false)
+    const delprod = (e,product) =>{
+        e.preventDefault()
+        setLoadingest(true)
+
+        axios.delete('http://localhost:8801/RemoveProduct', { 
+            data:{
+                id:product.productId,
+                image1:product.image1,
+                image2:product.image2,
+                image3:product.image3,
+                image4:product.image4,
+            }})
+        .then(res=>{
+            setLoadingest(false) 
+            if(res.status===200){
+                window.location.reload();
+            }
+        })
+    }
     return(
+        <>
         <div className='listingWrapper'>
             <div className='CMSHeader'>
                 <h2>Products</h2>
@@ -50,7 +74,7 @@ export default function ProductListing(){
                                 <td className='listBNT' style={{border:"none",textAlign:"center"}}>
                                     <div><Link to='/productForm' state={{productData:product}}>Edit</Link></div>
                                 </td>
-                                <td className='listBNT' style={{border:"none",textAlign:"center"}}><div>Del</div></td>
+                                <td className='listBNT delBtn' style={{border:"none",textAlign:"center"}} onClick={(e)=>delprod(e,product)}><div>Del</div></td>
                             </tr>
                             <tr style={{height:".25rem"}}></tr>
                             </>
@@ -60,5 +84,12 @@ export default function ProductListing(){
                 </table>
             </div>
         </div>
+        <div className={loadingest?'estloadingContainer showFlex':'estloadingContainer hide'}>
+            <div className='estloadingBG'></div>
+            <div className='estloading'>
+                <img src='../images/loading.png' />
+            </div>
+        </div>
+        </>
     )
 }

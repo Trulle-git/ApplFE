@@ -20,8 +20,8 @@ export default function StoryForm(){
         image3:"",
         image4:"",
         upDate:date,
-        type:"",
-        live:""
+        type:"Residential",
+        live:"y"
     })
 
     const [preImage, setPreImage] = useState({
@@ -111,8 +111,8 @@ export default function StoryForm(){
                     image3:"",
                     image4:"",
                     upDate:date,
-                    type:"",
-                    live:""
+                    type:"Residential",
+                    live:"y"
                 })
                 history('/storyListing')
             } else{
@@ -156,8 +156,8 @@ export default function StoryForm(){
                     image3:"",
                     image4:"",
                     upDate:date,
-                    type:"",
-                    live:""
+                    type:"Residential",
+                    live:"y"
                 })
                 history('/storyListing')
             } else{

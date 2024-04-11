@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './productListing.css'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 
 export default function TestListing(){
     const [tests, setTests]=useState([])
@@ -10,7 +11,26 @@ export default function TestListing(){
         .then(res=>res.json())
         .then(data=>setTests(data.rows))
     },[])
+
+    const [loadingest, setLoadingest] = useState(false)
+    const delprod = (e,product) =>{
+        e.preventDefault()
+        setLoadingest(true)
+
+        axios.delete('http://localhost:8801/RemoveTest', { 
+            data:{
+                id:product.id,
+                image:product.testimage,                
+            }})
+        .then(res=>{
+            setLoadingest(false) 
+            if(res.status===200){
+                window.location.reload();
+            }
+        })
+    }
     return(
+        <>
         <div className='listingWrapper'>
             <div className='CMSHeader'>
                 <h2>Testimonials</h2>
@@ -44,7 +64,7 @@ export default function TestListing(){
                                 <td className='listBNT' style={{border:"none",textAlign:"center"}}>
                                     <div><Link to='/testForm' state={{testData:test}}>Edit</Link></div>
                                 </td>
-                                <td className='listBNT' style={{border:"none",textAlign:"center"}}><div>Del</div></td>
+                                <td className='listBNT delBtn' style={{border:"none",textAlign:"center"}} onClick={(e)=>delprod(e,test)}><div>Del</div></td>
                             </tr>
                             <tr style={{height:".25rem"}}></tr>
                             </>
@@ -54,5 +74,12 @@ export default function TestListing(){
                 </table>
             </div>
         </div>
-    )
+            <div className={loadingest?'estloadingContainer showFlex':'estloadingContainer hide'}>
+            <div className='estloadingBG'></div>
+            <div className='estloading'>
+                <img src='../images/loading.png' />
+            </div>
+        </div>
+        </>
+)
 }
