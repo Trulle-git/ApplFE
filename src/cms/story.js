@@ -142,7 +142,7 @@ export default function StoryForm(){
         editStory.append('type',story.storytype);
         editStory.append('live',story.storylive);
 
-        axios.post('http://localhost:8801/updateStory', editStory)
+        axios.put('http://localhost:8801/updateStory', editStory)
         .then(res=>{
             if (res.status===200){
                 setStory({

@@ -10,7 +10,7 @@ export default function ProductListing(){
     useEffect(()=>{
         fetch("http://localhost:8801/products")
         .then(res=>res.json())
-        .then(data=>setProducts(data.rows))
+        .then(data=>setProducts(data))
     },[])
 
     const [loadingest, setLoadingest] = useState(false)
@@ -67,7 +67,7 @@ export default function ProductListing(){
                                 <td>{product.catagory}</td>
                                 <td>{product.name}</td>
                                 <td>{product.type}</td>
-                                <td>{product.range}</td>
+                                <td>{product.Prodrange}</td>
                                 <td>{product.price}</td>
                                 <td>{product.emi}</td>
                                 <td style={{border:"none"}}></td>

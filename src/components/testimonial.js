@@ -33,7 +33,6 @@ export default function Testimonial({testimonial}){
     },[client])
 
     useEffect(()=>{
-        console.log(testimonial)
         setTitle(testimonial[0].testtitle)
         setContent(testimonial[0].testcontent)
         setName(testimonial[0].testname)

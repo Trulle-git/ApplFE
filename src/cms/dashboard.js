@@ -14,9 +14,9 @@ export default function Dashboard(){
         .then(res=>res.json())
         .then(data=>{
             setCounts({
-                products:data.products,
-                stories:data.stories,
-                tests:data.tests,
+                products:data.products[0].products,
+                stories:data.story[0].story,
+                tests:data.testimonial[0].testimonial,
             })
         })
     },[])

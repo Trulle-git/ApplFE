@@ -9,7 +9,7 @@ export default function TestListing(){
     useEffect(()=>{
         fetch("http://localhost:8801/testimonial")
         .then(res=>res.json())
-        .then(data=>setTests(data.rows))
+        .then(data=>setTests(data))
     },[])
 
     const [loadingest, setLoadingest] = useState(false)

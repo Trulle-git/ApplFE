@@ -355,7 +355,7 @@ export default function Home(){
     useEffect(()=>{
         fetch("http://localhost:8801/testimonial")
         .then(res=>res.json())
-        .then(data=>setTest(data.rows))
+        .then(data=>setTest(data))
     },[])
     
 //Spliting Testimonial

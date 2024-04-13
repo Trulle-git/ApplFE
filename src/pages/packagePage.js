@@ -10,7 +10,7 @@ export default function PackagePage (){
           window.scrollTo(0, 0);
         };
       }, []); 
-    const productImage = ['./images/estImage.png','./images/packageImage.png','./images/packageImage.png','./images/packageImage.png']
+    const productImage = ['./images/estImage.png','./images/packageImage.png','./images/packageImage.png','./images/packageImage.png'] 
     const [mainImage, setMainImage] = useState(productImage[0])
     const [selectedPack, setselectedPack] = useState('one')
 

@@ -102,7 +102,7 @@ export default function TestForm(){
         editTest.append('testImage',test.image);        
         editTest.append('date',test.upDate);
 
-        axios.post('http://localhost:8801/updateTest', editTest)
+        axios.put('http://localhost:8801/updateTest', editTest)
         .then(res=>{
             if (res.status===200){
                 setTest({

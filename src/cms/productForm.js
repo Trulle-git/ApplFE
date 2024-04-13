@@ -63,7 +63,7 @@ export default function ProductForm(){
                 name:editData.name,
                 catagory:editData.catagory,
                 type:editData.type,
-                range:editData.range,
+                range:editData.Prodrange,
                 price:editData.price,
                 emi:editData.emi,
                 image1:editData.image1,

@@ -9,7 +9,7 @@ export default function Story(){
     useEffect(()=>{
         fetch("http://localhost:8801/stories")
         .then(res=>res.json())
-        .then(data=>setStory(data.rows))
+        .then(data=>setStory(data))
     },[])
 
     useEffect(() => {
